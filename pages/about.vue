@@ -8,9 +8,10 @@
       />
     </svg>
     <h1>ismakingsomething.cool</h1>
-    <h2>404 Not found</h2>
+    <h2>about us</h2>
     <links>
-      <router-link to="/">go home →</router-link>
+      <a>coming soon</a>
     </links>
   </container>
 </template>
+

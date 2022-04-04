@@ -8,9 +8,14 @@
       />
     </svg>
     <h1>ismakingsomething.cool</h1>
-    <h2>404 Not found</h2>
+    <h2>free domains, forever</h2>
     <links>
-      <router-link to="/">go home →</router-link>
+      <router-link to="/about">about us →</router-link>
+      <router-link to="/apply">apply for a domain →</router-link>
+      <a href="mailto:ismakingsomething.cool@outlook.com" target="_blank">contact us ↗</a>
+      <a href="https://github.com/ismakingsomethingdotcool" target="_blank">github ↗</a>
+      <a href="mailto:ismakingsomething.cool+abuse@outlook.com" target="_blank">report abuse ↗</a>
     </links>
   </container>
 </template>
+

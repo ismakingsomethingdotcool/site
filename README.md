@@ -1,4 +1,4 @@
-# website template
+# ismakingsomething.cool landing page
 ## Developing this
 ### yarn dev
 Start a dev server

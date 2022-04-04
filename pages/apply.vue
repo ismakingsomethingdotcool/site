@@ -8,9 +8,42 @@
       />
     </svg>
     <h1>ismakingsomething.cool</h1>
-    <h2>404 Not found</h2>
-    <links>
-      <router-link to="/">go home →</router-link>
-    </links>
+    <h2>apply for a free domain</h2>
+    <form action="mailto:ismakingsomething.cool+apply@outlook.com" enctype="text/plain" method="POST">
+      <inputs
+        ><input
+          type="text"
+          name="name"
+          placeholder="your name (optional)"
+        /><br />
+        <input
+          type="email"
+          name="email"
+          placeholder="your email (required, will be made public)"
+          required
+        /><br />
+        <input
+          type="text"
+          placeholder="requested subdomain (required)"
+          name="subdomain"
+          required
+        /><br />
+        <input
+          type="text"
+          placeholder="Nameservers (required)"
+          name="nameservers"
+          required
+        /><br />
+      </inputs>
+      <links>
+        <a
+          href="https://github.com/ismakingsomethingdotcool/dns"
+          target="_blank"
+          >request other records here ↗</a
+        >
+        <input type="submit" value="submit →" />
+      </links>
+    </form>
   </container>
 </template>
+
