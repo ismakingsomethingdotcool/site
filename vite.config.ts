@@ -4,11 +4,16 @@ import Pages from 'vite-plugin-pages';
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  plugins: [
-    vue(),
-    Pages({
-      dirs: './pages',
-      routeStyle: 'nuxt',
-    }),
-  ],
+	plugins: [
+		vue(),
+		Pages({
+			dirs: './pages',
+			routeStyle: 'nuxt',
+		}),
+	],
+	server: {
+		watch: {
+			usePolling: true,
+		},
+	},
 });

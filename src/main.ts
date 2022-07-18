@@ -5,12 +5,8 @@ import routes from '~pages';
 import './styles.scss';
 
 const router = createRouter({
-  history: createWebHistory(),
-  routes,
+	history: createWebHistory(),
+	routes,
 });
 
-createApp(App)
-  .use(
-    router
-  )
-  .mount('#app');
+createApp(App).use(router).mount('#app');

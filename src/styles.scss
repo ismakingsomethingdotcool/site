@@ -1,73 +1,57 @@
 @tailwind base;
 
 body {
+  @apply bg-black text-white break-words bg-cover min-h-screen h-full;
+}
+
+main {
+  @apply p-3;
+}
+
+nav {
+  @apply w-full;
+  div {
+    @apply flex flex-row flex-wrap items-center gap-3 p-3;
+    img {
+      @apply h-16;
+    }
+  }
+}
+
+#header {
   background: linear-gradient(107.81deg, #92ad94 -8.62%, #6e75a8 129.67%);
-  @apply text-white bg-cover;
 }
 
-container {
-  @apply flex flex-col space-y-2 sm:space-y-3 md:space-y-6 lg:space-y-9 justify-center items-center p-0 min-h-screen;
-}
-
-svg {
-  @apply h-10 sm:h-20 md:h-32 lg:h-40;
-}
 h1 {
-  @apply text-2xl sm:text-3xl md:text-5xl lg:text-7xl;
+  @apply text-4xl md:text-5xl;
 }
+
 h2 {
-  @apply text-xl sm:text-2xl md:text-3xl lg:text-4xl;
+  @apply text-2xl md:text-3xl;
 }
 
-links {
-  @apply flex flex-row space-x-2 items-center justify-center sm:space-x-3 md:space-x-6 lg:space-x-9 text-base;
-  flex-wrap: wrap;
+h3 {
+  @apply text-xl;
 }
 
-a,
-input[type='submit'] {
-  background-image: linear-gradient(45deg, white, white);
-  background-repeat: no-repeat;
-  background-size: 0% 2px;
-  transition: background-size 0.3s cubic-bezier(0.455, 0.03, 0.515, 0.955);
-  background-position: 0 92%;
+h4 {
+  @apply text-lg;
 }
 
-a:hover,
-input[type='submit']:hover {
-  background-size: 100% 2px;
+a {
+  @apply underline font-semibold;
 }
 
-[type='text'],
-[type='email'],
-[type='url'],
-[type='password'],
-[type='number'],
-[type='date'],
-[type='datetime-local'],
-[type='month'],
-[type='search'],
-[type='tel'],
-[type='time'],
-[type='week'],
-[multiple],
-textarea,
-select,
-[type='text']:focus,
-[type='email']:focus,
-[type='url']:focus,
-[type='password']:focus,
-[type='number']:focus,
-[type='date']:focus,
-[type='datetime-local']:focus,
-[type='month']:focus,
-[type='search']:focus,
-[type='tel']:focus,
-[type='time']:focus,
-[type='week']:focus,
-[multiple]:focus,
-textarea:focus,
-select:focus {
-  @apply text-black min-w-full text-sm;
+content {
+  @apply prose prose-invert max-w-none;
 }
 
+contributors {
+	@apply flex flex-row flex-wrap items-center gap-3 p-3;
+	div {
+		@apply flex flex-row flex-wrap items-center gap-3;
+		img {
+			@apply h-16 rounded-full;
+		}
+	}
+}
